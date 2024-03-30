@@ -46,7 +46,7 @@ Neovim as an IDE within a docker container.
       myproject_volume:
     ```
 
-2. Run the docker compose development environment
+2. Run the development environment
     ```bash
     docker-compose up
     ```
