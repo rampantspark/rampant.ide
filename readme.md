@@ -5,18 +5,28 @@ Neovim as an IDE within a docker container.
 ## Setup
 
 1. Build image from Dockerfile
-    `docker build -t rampant-ide .`
+    ```bash
+    docker build -t rampant-ide .
+    ```
 2. Run the image **run nvim and let plugins update**
-    `docker run -it rampant-ide`
+    ```bash    
+    docker run -it rampant-ide
+    ```
 3. Commit the continer to a new image
-    `docker commit <ID> rampant-ide:latest`
+    ```bash
+    docker commit <ID> rampant-ide:latest
+    ```
 
 ## Usage (Single Container)
 
 1. Create a docker volume
-    `docker volume create myproject_volume`
+    ```bash
+    docker volume create myproject_volume
+    ```
 2. Mount the volume to the container
-    `docker run -it --rm -v myproject_volume:/path/in/container rampant-ide`
+    ```bash
+    docker run -it --rm -v myproject_volume:/path/in/container rampant-ide
+    ```
 
 ## Usage (Multi Container)
 
@@ -37,6 +47,8 @@ Neovim as an IDE within a docker container.
     ```
 
 2. Run the docker compose development environment
-    `docker-compose up`
+    ```bash
+    docker-compose up
+    ```
 
 
