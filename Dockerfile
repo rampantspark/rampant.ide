@@ -12,7 +12,15 @@ RUN pacman --noconfirm -Syyu \
     nodejs \
     tmux \
     lazygit \
-    bottom
+    bottom \
+    base-devel
+
+# Setup yay
+RUN cd /tmp && \
+    git clone https://aur.archlinux.org/yay.git && \
+    cd ./yay && \
+    makepkg -si
+
 
 # Clone AstroNvim and Rampant.nvim repositories
 RUN git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim && \

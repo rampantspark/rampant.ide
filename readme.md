@@ -2,6 +2,21 @@
 
 Neovim as an IDE within a docker container.
 
+# Dependencies
+
+- Arch Linux (https://hub.docker.com/_/archlinux)
+- AstroNvim (https://github.com/AstroNvim/AstroNvim)
+    - Neovim (https://github.com/neovim/neovim)
+    - Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
+    - Tree-sitter CLI (https://github.com/tree-sitter/tree-sitter)
+    - ripgrep (https://github.com/BurntSushi/ripgrep)
+    - lazygit (https://github.com/jesseduffield/lazygit)
+    - gdu (https://github.com/dundee/gdu)
+    - bottom (https://github.com/ClementTsang/bottom)
+    - python (https://archlinux.org/packages/core/x86_64/python/)
+    - NodeJS (https://archlinux.org/packages/extra/x86_64/nodejs/)
+- rampant.nvim (https://github.com/rampantspark/rampant.nvim)
+
 ## Setup
 
 1. Build image from Dockerfile
