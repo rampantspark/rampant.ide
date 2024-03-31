@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  # You can customize this to trigger the workflow on pull requests or other events
+    paths:
+      - '**/Dockerfile'
 
 jobs:
   build-and-push:
