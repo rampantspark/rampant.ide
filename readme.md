@@ -23,6 +23,10 @@ Neovim as an IDE within a docker container.
 
 https://hub.docker.com/r/rampantspark/rampant.ide
 
+```bash
+docker pull rampantspark/rampant.ide
+```
+
 ### Build and Deploy Dockerfile
 
 1. Build image from Dockerfile
