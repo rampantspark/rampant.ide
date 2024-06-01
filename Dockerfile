@@ -19,6 +19,7 @@ RUN pacman --noconfirm -Syyu \
 
 # Clone AstroNvim and rampant.nvim repositories
 RUN git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim && \
+    rm -rf ~/.config/nvim/.git && \
     git clone https://github.com/rampantspark/rampant.nvim.git ~/.config/nvim/lua/user
 
 # Setup tmux config
