@@ -5,7 +5,7 @@ Neovim as an IDE within a docker container.
 # Dependencies
 
 - Arch Linux (https://hub.docker.com/_/archlinux)
-- AstroNvim (https://github.com/AstroNvim/AstroNvim)
+- AstroNvim v4.x (https://github.com/AstroNvim/AstroNvim) 
     - Neovim (https://github.com/neovim/neovim)
     - Nerd Fonts (https://github.com/ryanoasis/nerd-fonts)
     - Tree-sitter CLI (https://github.com/tree-sitter/tree-sitter)
