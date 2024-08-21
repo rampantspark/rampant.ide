@@ -18,14 +18,12 @@ RUN pacman --noconfirm -Syyu \
     sudo
 
 # Clone AstroNvim and rampant.nvim repositories
-RUN git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim && \
-    rm -rf ~/.config/nvim/.git && \
-    git clone https://github.com/rampantspark/rampant.nvim.git ~/.config/nvim/lua/user
+RUN git clone --depth 1 https://github.com/rampantspark/rampant.nvim.git ~/.config/nvim
 
 # Setup tmux config
 RUN mkdir ~/.config/tmux && \
     curl -o ~/.config/tmux/tmux.conf "https://raw.githubusercontent.com/gpakosz/.tmux/master/.tmux.conf" && \
-    curl -o ~/.config/tmux/tmux.conf.local "https://raw.githubusercontent.com/gpakosz/.tmux/master/.tmux.conf.local" 
+    curl -o ~/.config/tmux/tmux.conf.local "https://raw.githubusercontent.com/rampantspark/rampant.dots/main/themes/rampant-gruvbox-x11/tmux/tmux.conf.local" 
 
 # Create yay user
 RUN useradd -ms /bin/bash yay
